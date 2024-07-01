@@ -1,3 +1,14 @@
+/*******************************/
+    /*   COLORES
+    #fbfafb  blanquillo pal FONDO
+    #e49b85  ROSA 
+    #fbeeea  ROSA CLARITO
+    #d95e3d  NARANJA 1
+    #ea5630 e9562f  NARANJA 2
+    #173654  AZUL
+    #ecca71  AMARILLO
+    */
+
 (function ($) {
     "use strict";
     
