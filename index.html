@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
         <meta charset="utf-8">
-        <title>DevFolio - Developer Portfolio Template</title>
+        <title>MCarmen Portfolio</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -11,6 +11,11 @@
 
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <!-- Google Font Portada by me -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
 
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +32,8 @@
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-light navbar-light">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">porfolio</a>
+                <!-- 
+                <a href="index.html" class="navbar-brand">MC</a>-->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,15 +41,16 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
                         <a href="#home" class="nav-item nav-link active">Home</a>
-                        <a href="#about" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Service</a>
-                        <a href="#experience" class="nav-item nav-link">Experience</a>
                         <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-                        <a href="#price" class="nav-item nav-link">Price</a>
+                        <a href="#about" class="nav-item nav-link">Studies</a>
+                        <a href="#experience" class="nav-item nav-link">Experience</a>
+                        <a href="#service" class="nav-item nav-link">Interests</a>
+                        <a href="#marifoot" class="nav-item nav-link">Contact</a>
+                        <!--<a href="#price" class="nav-item nav-link">Price</a>
                         <a href="#review" class="nav-item nav-link">Review</a>
                         <a href="#team" class="nav-item nav-link">Team</a>
                         <a href="#blog" class="nav-item nav-link">Blog</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                          -->
                     </div>
                 </div>
             </div>
@@ -58,28 +65,167 @@
                     <div class="col-sm-12 col-md-6">
                         <div class="hero-content">
                             <div class="hero-text">
-                                <p>I'm</p>
-                                <h1>Mari </h1>
+                                <p>Mari's</p>
+                                <h1>PORTFOLIO</h1>
                                 <h2></h2>
-                                <div class="typed-text">Product Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
+                                <div class="typed-text">Product Designer, a creative,  Graphic Designer, Web Developer, Apps Developer</div>
                             </div>
                             <div class="hero-btn">
                              <!-- <a class="btn" href="">Hire Me</a>
                              height="640" width="700"
                              Image" style="width:900;height:600; --> 
-                                <a class="btn" href="">Contact Me</a>
+                                <a class="btn" href="#marifoot">Contact Me</a>
                             </div>
                         </div>
                     </div>
+                    <!-- 
                     <div class="col-sm-12 col-md-6 d-none d-md-block">
-                        <div class="hero-image">
+                       <div class="hero-image">
                             <img src="img/miYo-03.png" alt="Mari profile">
-                        </div>
-                    </div>
+                        </div> 
+                    </div>-->
                 </div>
             </div>
         </div>
         <!-- Hero End -->
+
+        <!-- ******************Portfolio Start ********************
+        ********************************************************-->
+
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Portfolio</p>
+                    <h2>Projects</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul id="portfolio-filter">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".filter-1">Product Design</li>
+                            <li data-filter=".filter-2">Graphic Design</li>
+                            <li data-filter=".filter-3">Augmented Reality</li>
+                            <li data-filter=".filter-4">Web Design & Dev</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- YUNA -->
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/pr1-yuna-foto0.png" alt="Image" class="img-yuna">
+                            </div>
+                            <!-- Superposición del botón al hacer hover -->
+                            <div class="portfolio-btn">
+                                <a class="btnA" href="Página-2.html">+ YUNA</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IC YUNA -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/pr2-ICyuna-foto0.png" alt="Image" class="img-icyuna">
+                            </div>
+
+                            <div class="portfolio-btn">
+                                <a class="btnA" href="img/portfolio-2.jpg" data-lightbox="portfolio">+ IC YUNA</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SENET -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/pr3-senet-foto0.png" alt="Image" class="img-senet">
+                            </div>
+                            <div class="portfolio-btn">
+                                <a class="btnA" href="img/portfolio-3.jpg" data-lightbox="portfolio">+ SENET</a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- ANGLE -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/pr4-angle-foto0.jpeg" alt="Image" class="img-angle">
+                            </div>
+                            <div class="portfolio-btn">
+                                <a class="btnA" href="img/portfolio-4.jpg" data-lightbox="portfolio">+ ANGLE SPEAKER</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPOP -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/pr-kpop-foto0.png" alt="Image" class="img-kpop">
+                            </div>
+                            <div class="portfolio-btn">
+                                <a class="btnA" href="img/portfolio-5.jpg" data-lightbox="portfolio">+ KPOP FEST</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TFM -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/pr-tfm-foto0.jpg" alt="Image" class="img-tfm">
+                            </div>
+                            <div class="portfolio-btn">
+                                <a class="btnA" href="img/portfolio-6.jpg" data-lightbox="portfolio">+ AR INSTRUCTIONS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ROTATINO -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-4 wow fadeInUp" data-wow-delay="1.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/pr-rotatino.jpg" alt="Image" class="img-rotatino">
+                            </div>
+                            <div class="portfolio-btn">
+                                <a class="btnA" href="img/portfolio-5.jpg" data-lightbox="portfolio">+ ROTATINO</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GRIFO -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="1.4s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/pr-grifo-foto0.JPG" alt="Image" class="img-grifo">
+                            </div>
+                            <div class="portfolio-btn">
+                                <a class="btnA" href="img/portfolio-6.jpg" data-lightbox="portfolio">+ WATTERTAP</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- photoshop -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="1.6s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/pr-ps-foto0.jpg" alt="Image" class="img-photoshop">
+                            </div>
+                            <div class="portfolio-btn">
+                                <a class="btnA" href="img/portfolio-6.jpg" data-lightbox="portfolio">+ PHOTOSHOP DRWNGS</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
 
 
         <!-- About Start -->
@@ -94,8 +240,8 @@
                     <div class="col-lg-6">
                         <div class="about-content">
                             <div class="section-header text-left"><br>
-                                <p>Learn About Me</p>
-                                <h2>Studies </h2>
+                                <p><em>Learn About Me</em></p>
+                                <h2>STUDIES </h2>
                             </div>
                             <div class="about-text">
                                 <p> I seek to learn, pursue new challenges that help me grow and improve my professional experience.I am attracted to the idea of integrating the world of industry with interactivity and design, the challenges of optimizing design and its manufacturing processes, as well as the creative and innovative. 
@@ -139,70 +285,7 @@
         <!-- About End -->
         
         
-        <!-- Service Start -->
-        <div class="service" id="service">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>What I do</p>
-                    <h2>Awesome Quality Services</h2>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Web Design</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fa fa-laptop-code"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Web Development</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-android"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Apps Design</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fab fa-apple"></i>
-                            </div>
-                            <div class="service-text">
-                                <h3>Apps Development</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Service End -->
+
         
         
          <!-- Experience Start -->
@@ -215,46 +298,56 @@
                 <div class="timeline">
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
+                            <div class="timeline-date">2023 - nowadays</div>
+                            <h2>Manufacturing Process Engineer at ALTEN: </h2>
+                            <h4>Alstom in Santa Perpetua de la Mogoda, Barcelona </h4>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                                Organize production systems and assembly structures in the railway sector, prepare work instructions from technical documentation. Implement changes and adaptations. Provide production support to achieve time objectives for vehicles on the production line.
                             </p>
                         </div>
                     </div>
                     <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
+                            <div class="timeline-date">2022 - 2023</div>
+                            <h2>Manufacturing Process Engineer at SCN</h2>
+                            <h4>Stadler Rail, Valencia</h4>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                              Analyzed problems and system errors. Coordinated with Engineering for design changes, Procurement for materials, and Production for scheduling. Managed SAP ERP requirements and stock. Created detailed solutions for workshop implementation.
                             </p>
                         </div>
                     </div>
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
+                            <div class="timeline-date">2021 - 2022</div>
+                            <h2>Production Engineer for Bogies (Internship)</h2>
+                            <h4>Stadler Valencia</h4>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                                Organized production systems and assembly phases for bogies using SAP, NX Siemens, and Teamcenter. Implemented design and assembly modifications. Communicated with the workshop to inform about changes and collaboratively resolve manufacturing or modification issues.
                             </p>
                         </div>
                     </div>
                     <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                         <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
+                            <div class="timeline-date">2018 - 2021</div>
+                            <h2>Industrial designer and product development engineer</h2>
+                            <h4>YuDesign, Valencia UPV</h4>
                             <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
+                                YuDesign is a student association at the Universitat Politècnica de València focused on promoting design culture, innovation, and creativity.
                             </p>
                         </div>
                     </div>
                     <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
                         <div class="timeline-text">
+                            <div class="timeline-date">summer 2020 </div>
+                            <h2>Grafic Designer (Internship)</h2>
+                            <h4>VELLO BIKE,Viena</h4>
+                            <p>
+                                Creating graphic materials such as sales magazines, instruction sheets, postcards, and shipping envelopes for the customer.
+                            </p>
+                        </div>
+                    </div>
+                   <!-- <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                         <div class="timeline-text">
                             <div class="timeline-date">2045 - 2050</div>
                             <h2>Web Developer</h2>
                             <h4>Soft Agency, San Francisco, CA</h4>
@@ -262,24 +355,85 @@
                                 Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
                             </p>
                         </div>
-                    </div>
-                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
-                        <div class="timeline-text">
-                            <div class="timeline-date">2045 - 2050</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
-                            </p>
-                        </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
         <!-- Job Experience End -->
         
-        
-        <!-- Banner Start -->
+               <!-- Service Start -->
+        <div class="service" id="service">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p><em>What I take away from my experience </em></p>
+                    <h2>MY CURRENT INTERESTS</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-laptop"></i>
+                            </div>
+                            <div class="service-text">                              
+                                <h3>PRODUCT DESIGN</h3>
+                                <p>
+                                    what I have studied, the creative side that motivates me greatly.I see it as a starting point where I can implement and evolve my other interests.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fa fa-laptop-code"></i>
+                            </div>
+
+                            <div class="service-text">                              
+                                <h3>GRAPHIC DESIGN</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <div class="service-text"> 
+                                <h3>Web Design & Development </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                              <div class="service-text">
+                                <h3>Apps Design & DEVELOPMENT WITH RA</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Phase nec preti mi. Curabi facilis ornare velit non
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+
+        <!--  Banner Start--> 
+            <!-- 
         <div class="banner wow zoomIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="section-header text-center">
@@ -293,101 +447,15 @@
                     <a class="btn">Pricing Plan</a>
                 </div>
             </div>
-        </div>
-        <!-- Banner End -->
+        </div>-->
+         <!--Banner End -->
 
 
-        <!-- Portfolio Start -->
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p>My Portfolio</p>
-                    <h2>My Excellent Portfolio</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1">Web Design</li>
-                            <li data-filter=".filter-2">Mobile Apps</li>
-                            <li data-filter=".filter-3">Game Dev</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row portfolio-container">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>eCommerce Website</h3>
-                                <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Product Landing Page</h3>
-                                <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>JavaScript quiz game</h3>
-                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-4.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>JavaScript drawing</h3>
-                                <a class="btn" href="img/portfolio-4.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-5.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Social Mobile Apps</h3>
-                                <a class="btn" href="img/portfolio-5.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-6.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Company Website</h3>
-                                <a class="btn" href="img/portfolio-6.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio End -->
+<!--antes portfolio aqui-->
         
         
         <!-- Banner Start -->
+        <!--
         <div class="banner wow zoomIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="section-header text-center">
@@ -402,10 +470,12 @@
                 </div>
             </div>
         </div>
+        -->
         <!-- Banner End -->
         
         
         <!-- Price Start -->
+        <!--
         <div class="price" id="price">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -499,16 +569,17 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Price End -->
         
         
-        <!-- Testimonial Start -->
+        <!-- Testimonial Start 
         <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
             <div class="container">
                 <div class="testimonial-icon">
                     <i class="fa fa-quote-left"></i>
                 </div>
+
                 <div class="owl-carousel testimonials-carousel">
                     <div class="testimonial-item">
                         <div class="testimonial-img">
@@ -549,10 +620,11 @@
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
+        Testimonial End -->
 
 
         <!-- Team Start -->
+        <!--
         <div class="team" id="team">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -642,11 +714,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
         <!-- Team End -->
         
         
-        <!-- Contact Start -->
+        <!-- Contact Start 
+        
         <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
             <div class="container-fluid">
                 <div class="container">
@@ -682,10 +755,11 @@
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
+        
+         Contact End -->
 
 
-        <!-- Blog Start -->
+        <!-- Blog Start 
         <div class="blog" id="blog">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -736,26 +810,26 @@
                 </div>
             </div>
         </div>
-        <!-- Blog End -->
+         Blog End -->
 
 
         <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="footer wow fadeIn" id="marifoot"data-wow-delay="0.3s">
             <div class="container-fluid">
                 <div class="container">
                     <div class="footer-info">
-                        <h2>Kate Winslet</h2>
-                        <h3>123 Street, New York, USA</h3>
+                        <h2>Mari Carmen Martinez</h2>
+                        <h3>Barcelona, Spain</h3>
                         <div class="footer-menu">
-                            <p>+012 345 67890</p>
-                            <p>info@example.com</p>
+                            <p>+34 722742646</p>
+                            <p>m.carmen1998ml@gmail.com</p>
                         </div>
                         <div class="footer-social">
                             <a href=""><i class="fab fa-twitter"></i></a>
                             <a href=""><i class="fab fa-facebook-f"></i></a>
                             <a href=""><i class="fab fa-youtube"></i></a>
                             <a href=""><i class="fab fa-instagram"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.linkedin.com/in/mari-carmen-mart%C3%ADnez-lucas-2a61a71a7/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -788,9 +862,10 @@
         <script src="lib/isotope/isotope.pkgd.min.js"></script>
         <script src="lib/lightbox/js/lightbox.min.js"></script>
         
-        <!-- Contact Javascript File -->
+        <!-- Contact Javascript File 
         <script src="mail/jqBootstrapValidation.min.js"></script>
         <script src="mail/contact.js"></script>
+        -->
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>

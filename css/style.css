@@ -6,9 +6,24 @@
     #e49b85  ROSA 
     #fbeeea  ROSA CLARITO
     #d95e3d  NARANJA 1
-    #ea5630 e9562f  NARANJA 2
+    #ea5630  NARANJA 2
+    #e9562f  NARANJA 2.2
     #173654  AZUL
     #ecca71  AMARILLO
+    
+    PALETA 2
+    #F45B0F
+    #0C0C0C
+    #969799
+    #F5F3F2
+    #FFFFFF
+
+Rojo: #ED1C24
+Azul: #0038A8
+Amarillo: #FFF200
+Negro: #000000
+Blanco: #FFFFFF
+
     */
 
 body {
@@ -23,7 +38,9 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #414141;
+    /**color: #414141; quiza el otro*/
+    /*color: #0C0C0C; */
+    color: #031927;
 }
 
 a {
@@ -149,6 +166,13 @@ a:focus {
     z-index: 999;
 }
 
+.navbar .navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    width: 100%;
+}
+
+
 .navbar.nav-sticky {
     position: fixed;
     top: 0;
@@ -196,15 +220,18 @@ a:focus {
     .navbar .navbar-brand {
         color: #ffffff;
     }
-    
+
+
+    /*texto portfolio barra menu????? acabar? */
     .navbar.nav-sticky .navbar-brand {
         color: #d95e3d;
+        font-family: 'Cormorant+Garamond';
     }
 
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
-        color: #ffffff;
+        color: #000000;
         font-size: 15px;
         font-weight: 500;
     }
@@ -216,7 +243,7 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #111111;
+        color: #d95e3d;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
@@ -226,7 +253,7 @@ a:focus {
 }
 
 @media (max-width: 991.98px) {   
-    .navbar {
+    .navbar { /*El fondo del menú desplegable (hamburguesa):*/
         padding: 15px;
         background: #ffffff !important;
     }
@@ -258,11 +285,12 @@ a:focus {
     margin-bottom: 45px;
     padding: 120px 0 0 0;
     overflow: hidden;
-    /*background: linear-gradient(rgba(239, 35, 60, .95), rgba(239, 35, 60, .95)), url(../img/hero-bg.jpg);*/
-    background: #d95e3d;
+    background: url("../img/Designer-11.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* Establecer una altura fija o relativa */
+    height: 100vh; /* La altura será del 100% de la ventana del navegador */
 }
 
 .hero .container-fluid {
@@ -282,35 +310,41 @@ a:focus {
 
 .hero .hero-content {
     position: relative;
+    margin-top: 130px;
     padding-left: 75px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
 }
-
+/*Im */
 .hero .hero-text p {
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 15px;
+    color: #000000;
+    font-size: 35px;
+    font-weight: 400;
+    /*margin-bottom: 15px;*/
+    font-family: 'Cormorant+Garamond';
+    line-height: 0.1;
 }
-
+/* mari*/
 .hero .hero-text h1 {
-    color: #ffffff;
-    font-size: 60px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
+    color: #000000;
+    font-size: 100px;
+    font-weight: 500;
+    /*letter-spacing: 3px;*/
+   /* margin-bottom: 15px;*/
+    font-family: 'Cormorant+Garamond';
+    
 }
-
+/*texto cambiante*/
 .hero .hero-text h2 {
     display: inline-block;
     margin: 0;
     height: 35px;
-    color: #ffffff;
+    color: #000000;;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 300;
+    font-family: 'Cormorant+Garamond';
 }
 
 .hero .hero-text .typed-text {
@@ -320,21 +354,22 @@ a:focus {
 .hero .hero-text .typed-cursor {
     font-size: 35px;
     font-weight: 300;
-    color: #ffffff;
+    color: #000000;
 }
 
 .hero .hero-btn .btn {
     margin-top: 35px;
-    color: #d95e3d;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
+    color: #000000;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #000000;
+    border-color: #000000;
 }
 
-.hero .hero-btn .btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
+.hero .hero-btn .btn:hover { 
+    color: #000000;
+    background: #000000;
+    box-shadow: inset 0 0 0 50px #FFF200;
+    
 }
 
 .hero .hero-btn .btn:first-child {
@@ -344,6 +379,7 @@ a:focus {
 @media (max-width: 991.98px) {
     .hero {
         padding-top: 60px;
+        height: 70vh; /* Cambia la altura para pantallas más pequeñas */
     }
     
     .hero .hero-content {
@@ -373,6 +409,7 @@ a:focus {
     .hero {
         padding-top: 60px;
         padding-bottom: 60px;
+        height: 60vh; /* Ajuste adicional para pantallas pequeñas */
     }
     
     .hero,
@@ -432,18 +469,18 @@ a:focus {
 
 .section-header p {
     display: inline-block;
-    margin: 0 30px;
+    /*margin: 0 30px;*/
     margin-bottom: 10px;
-    padding-left: 15px;
+   /* padding-left: 15px; */
     position: relative;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: #ffffff;
+    /*background: #ffffff;*/
 }
 
-/********** Linea decoración pre titulo **********/
+/********** Linea decoración pre titulo 
 .section-header p::before {
     position: absolute;
     content: "";
@@ -454,8 +491,8 @@ a:focus {
     background: #ecca71;
     z-index: -1;
 }
-
-/********** punto decoración pre titulo **********/
+**********/
+/********** punto decoración pre titulo 
 .section-header p::after {
     position: absolute;
     content: "";
@@ -466,7 +503,7 @@ a:focus {
     background: #ecca71;
     z-index: 1;
 }
-
+**********/
 .section-header h2 {
     margin: 0;
     position: relative;
@@ -487,7 +524,7 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    margin: -45px 0 45px 0;
+    margin: 45px 0 45px 0;
 }
 
 .about .col-lg-6 {
@@ -744,6 +781,7 @@ a:focus {
     position: relative;
     width: 100%;
     padding: 45px 0 15px 0;
+    background: #F5F3F2;
 }
 
 .service .service-item {
@@ -756,9 +794,9 @@ a:focus {
 }
 
 .service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #EF233C;
+    box-shadow: inset 800px 0 0 0 #d95e3d;
 }
-
+/*recuadro del icono*/
 .service .service-icon {
     position: relative;
     width: 150px;
@@ -766,14 +804,16 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #EF233C;
-    background: #ffffff;
+    border: 1px solid #d95e3d;
+    background: #F5F3F2;
+    /*border-radius: 15px;*/
 }
 
+/*creo q el icono*/
 .service .service-icon i {
     position: relative;
     font-size: 60px;
-    color: #EF233C;
+    color: #d95e3d;
     transition: .3s;
 }
 
@@ -792,6 +832,10 @@ a:focus {
     font-size: 20px;
     font-weight: 600;
     transition: 1s;
+    color: #031927;
+}
+.service .section-header h2 {
+    color: #d95e3d;
 }
 
 .service .service-text p {
@@ -802,7 +846,7 @@ a:focus {
 
 .service .service-item:hover .service-text h3,
 .service .service-item:hover .service-text p {
-    color: #ffffff;
+    color: #F5F3F2;
 }
 
 @media (max-width: 575.98px) {
@@ -841,25 +885,30 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     color: #ffffff;
-    background: #EF233C;
+    background: #d95e3d;
     border: 2px solid transparent;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #EF233C;
+    box-shadow: inset 0 0 0 50px #d95e3d;
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
+
+    /*border-bottom: 2px solid transparent;*/ /*para que tenga un subrayado que luego aparece*/
 }
 
 .portfolio #portfolio-filter li:hover,
 .portfolio #portfolio-filter li.filter-active {
-    color: #EF233C;
+    color: #d95e45;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 #d95e3d;
+    border-color: #d95e3d;
+    /*color: var(--primary);
+    border-color: var(--primary);*/ /*para que tenga un subrayado que aparece ahora*/
 }
 
-.portfolio .portfolio-item {
+.portfolio .portfolio-item { /*posicion cuadriculas de las fotos*/
     position: relative;
+    margin-bottom: 30px;
 }
 
 .portfolio .portfolio-wrap {
@@ -867,7 +916,7 @@ a:focus {
     width: 100%;
 }
 
-.portfolio .portfolio-img {
+/*.portfolio .portfolio-img {
     position: relative;
     overflow: hidden;
 }
@@ -877,13 +926,138 @@ a:focus {
     width: 100%; 
     height: 100%; 
     object-fit: cover;
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition: .5s;
 }
 
-.portfolio .portfolio-item:hover img {
+.portfolio .portfolio-item:hover img { movimiento de la foto
     margin-left: 15px;
+}*/
+
+/**** Ajustes generales del contenedor de la imagen ****/
+.portfolio .portfolio-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;          /* El contenedor ocupará el 100% de su contenedor padre */
+    height: 300px;        /* Tamaño fijo para todas las imágenes (ajusta según lo necesario) */
+    display: flex;        /* Usamos flex para centrar la imagen si es necesario */
+    align-items: center;  /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
 }
+
+/* Ajustes de la imagen */
+.portfolio .portfolio-img img {
+    width: 100%;          /* La imagen ocupa el ancho completo del contenedor */
+    height: 100%;         /* La imagen ocupa el alto completo del contenedor */
+    object-fit: cover;    /* La imagen se ajusta al contenedor y se recorta si es necesario */
+    transition: transform .5s; /* Suaviza la transformación al hacer hover */
+    transform: scale(1.1);     /* Escala ligeramente la imagen (esto es opcional) */
+}
+
+            /* Ajustes de object-position para cada imagen */
+
+            /* Imagen yuna */
+            .img-yuna {
+                object-position: 10% 50%; /* Centra la imagen (ajusta según lo que desees) */
+            }
+
+            /* Imagen ICYuna */
+            .img-icyuna {
+                object-position: 45% 70%; /* Ajusta la posición según tu preferencia */
+            }
+
+            /* Imagen senet */
+            .img-senet {
+                object-position: 5% 50%; /* Ajusta la posición según tu preferencia */
+            }
+
+            /* Imagen angle */
+            .img-angle {
+                object-position: 140% 50%; /* Ajusta la posición según tu preferencia */
+                scale: 1.4;
+            }
+
+            /* Imagen Kpop */
+            .img-kpop {
+                object-position: 50% 75%; /* Ajusta la posición según tu preferencia */
+            }
+
+            /* Imagen TFM */
+            .img-tfm {
+                object-position: 50% 50%; /* Ajusta la posición según tu preferencia */
+            }
+
+            /* Imagen rotatino */
+            .img-rotatino {
+                object-position: 50% 50%; /* Ajusta la posición según tu preferencia */
+                scale: 1.1;
+            }
+
+            /* Imagen grifo */
+            .img-grifo {
+                object-position: 90% 50%; /* Ajusta la posición según tu preferencia */
+            }
+
+            /* Imagen photoshop */
+            .img-photoshop {
+                object-position: 200% 50%; /* Ajusta la posición según tu preferencia */
+                scale: 1.8;
+            }
+
+
+
+
+
+/* Efecto de movimiento en hover */
+.portfolio .portfolio-item:hover img {
+    transform: scale(1.2);    /* Escala más la imagen al hacer hover */
+    margin-left: 0;           /* Corrige cualquier desplazamiento */
+}
+
+
+/* Superposición del botón - Oculto por defecto */
+.portfolio-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 54, 84, .8); /* Fondo naranja con transparencia */
+    display: flex;
+    align-items: center;  /* Alineación del contenido */
+    justify-content: center;  /* Centrado del botón */
+    opacity: 0;  /* Oculto inicialmente */
+    transition: opacity 0.5s ease; /* Transición suave de aparición */
+    z-index: 1; /* Asegura que la superposición esté por encima de la imagen */
+}
+
+/* Estilo inicial del botón */
+.portfolio-btn .btnA {
+    background: transparent; /* Fondo transparente inicialmente */
+    color: #fff; /* Color del texto (blanco para visibilidad sobre el fondo) */
+    border: 2px solid #fff; /* Borde blanco para el botón */
+    padding: 10px 20px; /* Tamaño del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease; /* Transiciones suaves para color y fondo */
+}
+
+/* Mostrar la superposición y el botón al hacer hover sobre la imagen */
+.portfolio-item:hover .portfolio-btn {
+    opacity: 1; /* La superposición y el botón aparecen al hacer hover */
+}
+
+/* Cambiar color del botón al hacer hover sobre el botón */
+.portfolio-btn .btnA:hover {
+    background: #d95e3d; /* Fondo naranja al hacer hover */
+    color: #fff; /* Color del texto en blanco para contraste */
+    border-color: #d95e3d; /* Cambiar el color del borde también al naranja */
+}
+
+
+
+/*******************
 
 .portfolio .portfolio-text {
     position: relative;
@@ -905,6 +1079,7 @@ a:focus {
     overflow: hidden;
 }
 
+/******BOTON CAMBIO DE PAGINA
 .portfolio .portfolio-text a.btn {
     width: 50px;
     height: 50px;
@@ -916,23 +1091,22 @@ a:focus {
     font-weight: 100;
 }
 
-.portfolio .portfolio-item:hover a.btn {
-    color: #EF233C;
+.portfolio .portfolio-item:hover a.btn {  
+    color: #d95e3d;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 #d95e3d;
+    border-color: #d95e3d;
 }
 
 
-/*******************************/
-/********* Banner CSS **********/
-/*******************************/
+*******************************/
+/********* Banner CSS ********
 .banner {
     position: relative;
     width: 100%;
     margin: 45px 0;
     padding: 90px 0;
-    background: #EF233C;
+    background: #000000;
 }
 
 .banner .container {
@@ -945,7 +1119,7 @@ a:focus {
 }
 
 .banner .section-header p {
-    color: #414141;
+    color: #969799;
     background: transparent;
 }
 
@@ -982,9 +1156,9 @@ a:focus {
 }
 
 
-/*******************************/
+*****************************/
 /********* Pricing CSS *********/
-/*******************************/
+/******************************
 .price {
     position: relative;
     width: 100%;
@@ -1101,9 +1275,9 @@ a:focus {
 }
 
 
-/*******************************/
+*****************************/
 /*********** Team CSS **********/
-/*******************************/
+/******************************
 .team {
     position: relative;
     width: 100%;
@@ -1222,9 +1396,9 @@ a:focus {
 }
 
 
-/*******************************/
+*****************************/
 /******* Testimonial CSS *******/
-/*******************************/
+/******************************
 .testimonial {
     position: relative;
     margin: 45px 0;
@@ -1312,9 +1486,9 @@ a:focus {
 }
 
 
-/*******************************/
+******************************/
 /********* Contact CSS *********/
-/*******************************/
+/******************************
 .contact {
     position: relative;
     width: 100%;
@@ -1396,9 +1570,9 @@ a:focus {
 }
 
 
-/*******************************/
+******************************/
 /*********** Blog CSS **********/
-/*******************************/
+/******************************
 .blog {
     position: relative;
     width: 100%;
@@ -1472,13 +1646,13 @@ a:focus {
 }
 
 
-/*******************************/
+*****************************/
 /********* Footer CSS **********/
 /*******************************/
 .footer {
     position: relative;
     margin-top: 45px;
-    background: #EF233C;
+    background: #d95e3d;
 }
 
 .footer .container-fluid {
