@@ -18,13 +18,15 @@
     #F5F3F2
     #FFFFFF
 
-Rojo: #ED1C24
-Azul: #0038A8
-Amarillo: #FFF200
-Negro: #000000
-Blanco: #FFFFFF
-
     */
+
+:root {
+    --color-rojo: #ED1C24; 
+    --color-azul: #0038A8; 
+    --color-amarillo: #FFF200;
+    --text-color: #0C0C0C; 
+    --color-blanco: #FFFFFF; 
+}
 
 body {
     color: #797979;
@@ -39,8 +41,8 @@ h4,
 h5, 
 h6 {
     /**color: #414141; quiza el otro*/
-    /*color: #0C0C0C; */
-    color: #031927;
+    color: #0C0C0C; 
+    
 }
 
 a {
@@ -65,26 +67,26 @@ a:focus {
     max-width: 1366px;
 }
 
-.btn {
+.btn { /*QUITAR lo innecesario cuando esten todos los botones*/
     padding: 12px 25px;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #ffffff;
-    background: #d95e3d;
+    background: var(--color-rojo);
     border: 2px solid transparent;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #d95e3d;
+    box-shadow: inset 0 0 0 50px var(--color-rojo);
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
 }
 
 .btn:hover {
-    color: #d95e3d;
+    color: var(--color-rojo);
     background: transparent;
-    box-shadow: inset 0 0 0 0 #d95e3d;
-    border-color: #d95e3d;
+    box-shadow: inset 0 0 0 0 var(--color-rojo);
+    border-color: var(--color-rojo);
 }
 
 #loader {
@@ -118,7 +120,7 @@ a:focus {
     width: 45px;
     height: 45px;
     border: 5px solid #dddddd;
-    border-top: 5px solid #EF233C;
+    border-top: 5px solid var(--color-azul);
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
@@ -146,14 +148,22 @@ a:focus {
     right: 15px;
     bottom: 15px;
     z-index: 9;
+    background: var(--color-amarillo);
+    box-shadow: inset 0 0 0 0 var(--color-amarillo);
+    /*color: var(--color-rojo);
+    background: transparent;
+    box-shadow: inset 0 0 0 0 var(--color-rojo);
+    border-color: var(--color-rojo);*/
+
 }
 
 .back-to-top i {
-    color: #ffffff;
+    color: var(--color-azul);
 }
 
 .back-to-top:hover i {
-    color: #414141;
+    color: var(--color-amarillo);
+
 }
 
 
@@ -224,10 +234,11 @@ a:focus {
 
     /*texto portfolio barra menu????? acabar? */
     .navbar.nav-sticky .navbar-brand {
-        color: #d95e3d;
+        color: var(--color-rojo);
         font-family: 'Cormorant+Garamond';
     }
 
+/*texto navbar sin pulsar */
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
@@ -243,12 +254,12 @@ a:focus {
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #d95e3d;
+        color: var(--color-rojo);
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #d95e3d;
+        color: var(--color-rojo);
     }
 }
 
@@ -356,21 +367,23 @@ a:focus {
     font-weight: 300;
     color: #000000;
 }
-
+/*boton contact me sin pulsar */
 .hero .hero-btn .btn {
     margin-top: 35px;
-    color: #000000;
-    background: transparent;
+    color: #000000; /* Color del texto en el estado normal */
+    background: transparent; /* Fondo transparente en el estado normal */
     box-shadow: inset 0 0 0 0 #000000;
-    border-color: #000000;
+    border-color: #000000; /* Borde negro */
 }
 
+/*boton contact me pulsardo */
 .hero .hero-btn .btn:hover { 
     color: #000000;
-    background: #000000;
-    box-shadow: inset 0 0 0 50px #FFF200;
-    
+    background: #000000; /* Fondo negro en el estado hover */
+    box-shadow: inset 0 0 0 50px #FFF200; /* Sombra interna amarilla */
 }
+    
+    
 
 .hero .hero-btn .btn:first-child {
     margin-right: 10px;
@@ -570,8 +583,9 @@ a:focus {
     font-weight: 400;
 }
 
-.about .skill-name p:last-child {
-    float: right;
+/* Aplica el comportamiento de flotación a la derecha solo al último párrafo dentro de '.skill-name'. Esto significa que el último párrafo se alineará a la derecha del contenedor. */
+/*.about .skill-name p:last-child {
+    float: right; 
 }
 
 .about .progress {
@@ -585,7 +599,7 @@ a:focus {
     background: #d95e3d;
     border-radius: 10px;
     transition: 2s;
-}
+}*/
 
 .about .about-text a.btn {
     margin-top: 15px;
@@ -611,11 +625,12 @@ a:focus {
     width: 100%;
 }
 
+/*linea*/
 .experience .timeline::after {
     content: '';
     position: absolute;
     width: 2px;
-    background: #d95e3d;
+    background: var(--color-rojo);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -639,6 +654,7 @@ a:focus {
     padding-left: 30px;
 }
 
+/*puntito*/
 .experience .timeline .timeline-item::after {
     content: '';
     position: absolute;
@@ -646,8 +662,8 @@ a:focus {
     height: 16px;
     top: 48px;
     right: -8px;
-    background: #ffffff;
-    border: 2px solid #d95e3d;
+    background: var(--color-azul);
+    border: 2px solid var(--color-azul);
     border-radius: 16px;
     z-index: 1;
 }
@@ -656,6 +672,7 @@ a:focus {
     left: -8px;
 }
 
+/*triangulitos izquierda*/
 .experience .timeline .timeline-item::before {
   content: '';
   position: absolute;
@@ -665,21 +682,23 @@ a:focus {
   right: 10px;
   z-index: 1;
   border: 10px solid;
-  border-color: transparent transparent transparent #dddddd;
+  border-color: transparent transparent transparent var(--color-amarillo);
 }
 
+/*triangulitos derecha*/
 .experience .timeline .timeline-item.right::before {
   left: 10px;
-  border-color: transparent #dddddd transparent transparent;
+  border-color: transparent var(--color-amarillo) transparent transparent;
 }
 
+/*fechas*/
 .experience .timeline .timeline-date {
     position: absolute;
     width: 100%;
     top: 44px;
     font-size: 16px;
     font-weight: 600;
-    color: #d95e3d;
+    color: var(--color-rojo);
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
@@ -695,17 +714,19 @@ a:focus {
     right: calc(100% + 55px);
 }
 
+/*barra lateral textos derecha*/
 .experience .timeline .timeline-text {
     padding: 30px;
     background: #ffffff;
     position: relative;
-    border-right: 5px solid #dddddd;
+    border-right: 5px solid var(--color-amarillo);
     box-shadow: 0 0 60px rgba(0, 0, 0, .08);
 }
 
+/*barra lateral textos izquierda*/
 .experience .timeline .timeline-item.right .timeline-text {
     border-right: none;
-    border-left: 5px solid #dddddd;
+    border-left: 5px solid var(--color-amarillo);
 }
 
 .experience .timeline .timeline-text h2 {
@@ -792,11 +813,11 @@ a:focus {
     box-shadow: inset 0 0 0 0 transparent;
     transition: ease-out 0.5s;
 }
-
+/*hover del recuadro del texto*/
 .service .service-item:hover {
-    box-shadow: inset 800px 0 0 0 #d95e3d;
+    box-shadow: inset 800px 0 0 0 var(--color-azul);
 }
-/*recuadro del icono*/
+/*recuadro del icono// tambien define el ancho que puede tener el texto sin desbordarse de esta caja*/
 .service .service-icon {
     position: relative;
     width: 150px;
@@ -804,21 +825,23 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #d95e3d;
+    /*border: 1px solid var(--color-amarillo);*/
     background: #F5F3F2;
     /*border-radius: 15px;*/
 }
+/*idea: puedes centrar los iconos a la derecha pero luego bajarle el tamaño que aumenta*/
 
-/*creo q el icono*/
+/*icono*/
 .service .service-icon i {
     position: relative;
     font-size: 60px;
-    color: #d95e3d;
+    color: var(--color-rojo);
     transition: .3s;
 }
 
 .service .service-item:hover i {
     font-size: 75px;
+    color: var(--color-azul);
 }
 
 .service .service-text {
@@ -827,21 +850,26 @@ a:focus {
     padding: 0 30px;
 }
 
+/*titulitos*/
 .service .service-text h3 {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 600;
     transition: 1s;
-    color: #031927;
-}
-.service .section-header h2 {
-    color: #d95e3d;
+    color: #0c0c0c
 }
 
+
+.service .section-header h2 {
+    color: #0c0c0c
+}
+
+/*textos corto*/
 .service .service-text p {
     margin: 0;
     font-size: 16px;
     transition: 1s;
+    font-weight: 400;
 }
 
 .service .service-item:hover .service-text h3,
@@ -884,26 +912,33 @@ a:focus {
     padding: 6px 12px;
     font-size: 14px;
     font-weight: 600;
-    color: #ffffff;
-    background: #d95e3d;
-    border: 2px solid transparent;
+         /*color: #ffffff;
+         background: #d95e3d;
+         box-shadow: inset 0 0 0 50px #d95e3d;*/
+        color: #000000;
+        background: transparent;
+        box-shadow: inset 0 0 0 0 #000000;
+    border: 1px solid #000000;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #d95e3d;
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
-
     /*border-bottom: 2px solid transparent;*/ /*para que tenga un subrayado que luego aparece*/
 }
 
 .portfolio #portfolio-filter li:hover,
 .portfolio #portfolio-filter li.filter-active {
-    color: #d95e45;
+    /*color: #d95e45;
     background: transparent;
     box-shadow: inset 0 0 0 0 #d95e3d;
     border-color: #d95e3d;
-    /*color: var(--primary);
+    color: var(--primary);
     border-color: var(--primary);*/ /*para que tenga un subrayado que aparece ahora*/
+    color: var(--color-blanco);
+    background: var(--color-blanco);
+    box-shadow: inset 0 0 0 50px var(--color-azul);
+
+
 }
 
 .portfolio .portfolio-item { /*posicion cuadriculas de las fotos*/
@@ -1007,6 +1042,7 @@ a:focus {
 
 
 
+/* BOTONES DE LAS FOTOS */
 
 /* Efecto de movimiento en hover */
 .portfolio .portfolio-item:hover img {
@@ -1022,7 +1058,7 @@ a:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(23, 54, 84, .8); /* Fondo naranja con transparencia */
+    background: rgba(0, 56, 168, .6); /* Fondo naranja con transparencia */
     display: flex;
     align-items: center;  /* Alineación del contenido */
     justify-content: center;  /* Centrado del botón */
@@ -1050,9 +1086,9 @@ a:focus {
 
 /* Cambiar color del botón al hacer hover sobre el botón */
 .portfolio-btn .btnA:hover {
-    background: #d95e3d; /* Fondo naranja al hacer hover */
-    color: #fff; /* Color del texto en blanco para contraste */
-    border-color: #d95e3d; /* Cambiar el color del borde también al naranja */
+    background: var(--color-amarillo); /* Fondo al hacer hover */
+    color: var(--text-color); /* Color del texto */
+    border-color: var(--color-amarillo); /* Color del borde */
 }
 
 
@@ -1651,31 +1687,64 @@ a:focus {
 /*******************************/
 .footer {
     position: relative;
-    margin-top: 45px;
-    background: #d95e3d;
+    /*margin-top: 45px;*/
+    background: var(--color-azul);
+
 }
 
 .footer .container-fluid {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: flex-end; /* Alinea todo el contenido hacia el fondo */
     padding: 60px 0 0 0;
+    
 }
 
+
+/*titulos*/
+
+.contact-me p {
+    display: inline-block;
+    /*margin: 0 30px;*/
+    margin-bottom: 10px;
+   /* padding-left: 15px; */
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+
+.contact-me h2 {
+    margin: 0;
+    position: relative;
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--color-amarillo);
+}
+
+/*resto info*/
 .footer .footer-info {
     position: relative;
     width: 100%;
     text-align: center;
+    margin-top: 60px;
 }
 
 .footer .footer-info h2 {
     margin-bottom: 20px;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 400;
     color: #ffffff;
 }
 
 .footer .footer-info h3 {
     margin-bottom: 25px;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 300;
+    font-style: italic;
     color: #ffffff;
 }
 
@@ -1685,31 +1754,44 @@ a:focus {
     justify-content: center;
 }
 
-.footer .footer-menu p {
+/*.footer .footer-menu p {
     color: #ffffff;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 0 15px;
+    border-right: 1px solid #ffffff;
+}*/
+
+.footer .footer-menu p a {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 300;
     line-height: 20px;
     padding: 0 15px;
     border-right: 1px solid #ffffff;
 }
 
-.footer .footer-menu p:last-child {
-    border: none;
+.footer .footer-menu p a:hover {
+    color: var(--color-rojo);
 }
+
+/*.footer .footer-menu p:last-child {
+    border: none;
+}*/
 
 .footer .footer-social {
     position: relative;
     margin-top: 15px;
 }
 
-.footer .footer-social a {
+/*.footer .footer-social a {
     display: inline-block;
-}
-
+}*/
+/*icono*/
 .footer .footer-social a i {
     margin-right: 15px;
-    font-size: 20px;
+    font-size: 30px;
     color: #ffffff;
     transition: .3s;
 }
@@ -1719,7 +1801,7 @@ a:focus {
 }
 
 .footer .footer-social a:hover i {
-    color: #414141;
+    color: var(--color-rojo);
 }
 
 .footer .copyright {
@@ -1751,11 +1833,11 @@ a:focus {
 
 .footer .copyright p a {
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 200;
 }
 
 .footer .copyright p a:hover {
-    color: #414141;
+    color: var(--color-rojo);
 }
 
 @media (max-width: 575.98px) {
