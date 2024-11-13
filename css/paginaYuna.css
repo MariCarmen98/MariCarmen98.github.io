@@ -3,6 +3,13 @@
                     <i class="fa fa-quote-left"></i>
                 </div>**/
 
+:root {
+    --color-rojo: #ED1C24; 
+    --color-azul: #0038A8; 
+    --color-amarillo: #FFF200;
+    --text-color: #0C0C0C; 
+    --color-blanco: #FFFFFF; 
+}
 
 .columnas {
   column-count: 2; /* Número de columnas */
@@ -13,6 +20,56 @@ p {
    margin-bottom: 10px; /* Espacio más pequeño entre párrafos */
    line-height: 1.5; /* Espacio entre líneas dentro del párrafo */
 }
+
+
+
+/* Estilos para la barra de navegación */
+    .navbar {
+      position: sticky; 
+      top: 0;
+      background-color: #FFF;
+      padding: 0.5rem 0.5rem 0.5rem 2rem; /* top, right, bottom, left */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    }
+
+    .navbar a{
+      color: #0038A8;
+  }
+    .navbar a:hover{
+    color: #ED1C24;
+  }
+    .navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: inherit;
+  }
+
+  .logo-icon {
+    width: 50px;  /* Ajusta el tamaño del ícono */
+    height: auto;
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    
+  }
+
+  
+   
+
+    /*.navbar a.navbar-brand {
+      color: #0c0c0c;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .navbar a.navbar-brand:hover {
+      color: #0038A8;
+    }*/
+
 /*-------SECCION 1 (FOTO INICIAL Y TEXTOS)------*/
 
 .u-section-1 .u-sheet-1 {
@@ -51,15 +108,15 @@ p {
 }*/
 
   .iconito {
-    fill: #969799; /* Color dorado */
-    width: 80px; /* Ancho del ícono */
-    height: 80px; /* Alto del ícono */
+    fill: var(--color-azul); /* Color dorado */
+    width: 70px; /* Ancho del ícono */
+    height: 70px; /* Alto del ícono */
     transition: transform 0.3s ease; /* Transición suave */
 }
 
 .iconito:hover {
-    fill: #173654; /* Cambia el color al pasar el mouse */
-    transform: scale(1.1); /* Aumenta el tamaño del ícono al hacer hover */
+    /*fill: var(--color-azul); /* Cambia el color al pasar el mouse */
+    transform: scale(1.05); /* Aumenta el tamaño del ícono al hacer hover */
 }
 
 @media (max-width: 991px) {
@@ -121,11 +178,11 @@ p {
 
 .u-section-2 .u-image-1 {
   background-image: url("../img/pr1-yuna-foto1.png");
-  background-size: cover;
-  background-position: right;
-  margin-right: -120px; 
-  
+  background-position: 75% 50%;
 
+  /*background-size: cover;
+  background-position: right;
+  margin-right: -120px; */
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
@@ -172,7 +229,7 @@ p {
 .u-section-2 .u-image-4 {
   background-image: url("../img/pr1-yuna-foto4.png");
   background-position: 50% 50%;
-  background-size: contain;
+  /*background-size: contain;*/
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
@@ -213,9 +270,9 @@ p {
     min-height: 2168px;
   }
 
-  .u-section-2 .u-image-1 {
+  /*.u-section-2 .u-image-1 {
     background-position: 50% 23.11%;
-  }
+  }*/
 }
 
 @media (max-width: 767px) {
@@ -226,20 +283,27 @@ p {
 /*-------------  SECTION 3 (texto)  ----------*/
 .u-section-3 {
   background-image: none;
+  background-color: #0038A8;
+  color: white;
 }
 
 .u-section-3 .u-sheet-1 {
   min-height: 268px; /*tamaño de la banda de color*/
+  padding: auto auto 30px auto;
 }
 
 .u-section-3 .u-text-1 {
-  --animation-custom_in-translate_x: 0px;
-  --animation-custom_in-translate_y: 300px;
+  --animation-custom_in-translate_x: -200px;
+  --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
   font-size: 16px;
-  margin: 45px 0 -216px; /*45px: margen superiro del párrafo, 216:margen inferior  */
+  font-weight: 300;
+  margin: 45px 0 0; /* eliminamos el margen negativo */
+  padding: 0 15px; /* agregamos padding para que el texto no toque los bordes */
+  max-width: 100%; /* aseguramos que el texto no se desborde */
+  word-wrap: break-word; /* forzamos el ajuste de palabras largas */
 }
 
 @media (max-width: 767px) {
@@ -248,7 +312,8 @@ p {
   }
 
   .u-section-3 .u-text-1 {
-    margin-bottom: -88px;
+   font-size: 14px; /* reducimos un poco el tamaño de fuente */
+    margin-bottom: 88px;
   }
 }
 
@@ -258,13 +323,13 @@ p {
   }
 
   .u-section-3 .u-text-1 {
-    margin-bottom: 70px;
+    font-size: 12px; /* tamaño de fuente aún menor en pantallas pequeñas */
+    margin-bottom: 50px;
+  
   }
-
-
+}
 /*-------------  SECTION 4 (fotos)  ----------*/
-
-}.u-section-4 .u-sheet-1 {
+.u-section-4 .u-sheet-1 {
   min-height: 1474px;
 }
 
@@ -468,8 +533,8 @@ p {
 
 /* Estilos para el footer */
 .footer {
-    background-color: #333; /* Color de fondo gris oscuro */
-    color: #fff; /* Color de texto blanco */
+    background-color: var(--color-azul); /* Color de fondo gris oscuro */
+    color: var(--color-amarillo); /* Color de texto blanco */
     text-align: center; /* Centrar el texto */
     padding: 20px 0; /* Espaciado superior e inferior */
 }
@@ -481,17 +546,22 @@ p {
 
 /* Estilos para la sección de backlink */
 .backlink {
-    background-color: #333; /* Mismo color de fondo que el footer */
+    background-color: var(--color-azul); /* Mismo color de fondo que el footer */
     text-align: center; /* Centrar el contenido */
     padding: 10px 0; /* Espaciado */
     font-size: 12px; /* Tamaño de fuente pequeño */
 }
 
 .backlink a {
-    color: #ffd700; /* Color dorado para el enlace */
+    
+    color: var(--color-amarillo); /* Color dorado para el enlace */
     text-decoration: none; /* Eliminar subrayado del enlace */
 }
 
 .backlink a:hover {
+    color: var(--color-rojo);
     text-decoration: underline; /* Subrayar el enlace al pasar el mouse */
 }
+
+
+

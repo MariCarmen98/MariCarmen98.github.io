@@ -54,18 +54,17 @@
     
     <!-- Ruta para un script externo (probablemente para manejo de entradas de teléfono) -->
     <meta data-intl-tel-input-cdn-path="intlTelInput/">
-
-  
-
-
-
 </head>
 
 
 
 
 
+
     <!-- Empieza el body -->
+
+
+
 
   <body data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="es">
   <!-- El elemento body contiene la estructura principal de la página -->
@@ -74,105 +73,14 @@
   <!-- class="u-body u-xl-mode" define las clases CSS para estilos, incluyendo un modo específico XL (posiblemente para pantallas grandes) -->
   <!-- data-lang="es" indica que el idioma de la página es español -->
 
-  <header class="u-clearfix u-header u-header" id="sec-c861">
-    <!-- Encabezado de la página con la clase u-clearfix para limpiar floats y con identificador sec-c861 -->
-    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-      <!-- Contenedor para organizar los elementos dentro del header, centrando verticalmente el contenido -->
-
-     <!-- Enlace que sirve como logotipo de la página, con la clase u-image y u-logo para estilos 
-      <a href="#" class="u-image u-logo u-image-1">
-        <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
-         Imagen del logotipo con la ruta a un archivo de imagen predeterminado 
-      </a>-->
-
-      <a href="index.html" class="navbar-brand">back</a>
-
-      <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
-        <!-- Elemento de navegación (menú) que soporta menús desplegables y un menú tipo "offcanvas" (deslizable) -->
-
-        <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
-          <!-- Contenedor que colapsa el menú en dispositivos pequeños con un tamaño de fuente específico -->
-
-          <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
-            <!-- Enlace con clases personalizadas que aplican estilos de espaciado y colores activos/hover para el texto -->
-
-            <svg class="u-svg-link" viewBox="0 0 24 24">
-              <use xlink:href="#menu-hamburger"></use>
-              <!-- Icono SVG que representa un menú tipo "hamburguesa" (tres líneas horizontales) -->
-            </svg>
-
-            <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16">
-              <!-- Definición del gráfico SVG que se utiliza para el ícono del menú -->
-              <g>
-                <rect y="1" width="16" height="2"></rect>
-                <rect y="7" width="16" height="2"></rect>
-                <rect y="13" width="16" height="2"></rect>
-                <!-- Tres rectángulos que componen el ícono de menú hamburguesa -->
-              </g>
-            </svg>
-          </a>
-        </div>
-
-        <div class="u-nav-container">
-          <!-- Contenedor para los elementos del menú cuando está expandido -->
-          <ul class="u-nav u-unstyled u-nav-1">
-            <!-- Lista sin estilo para los enlaces del menú -->
-
-            <!-- Menú de navegación -->
-            
-            <!--<li class="u-nav-item">
-               Enlace a "Página 1" con estilos definidos para el estado activo y hover 
-              <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Página-1.html" style="padding: 10px 20px;">Página ONE</a>
-            </li>-->
-
-            <li class="u-nav-item">
-              <!-- Enlace a "Página 2" con estilos similares a los otros enlaces -->
-              <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="paginaYuna.html" style="padding: 10px 20px;">Página 2</a>
-            </li>
-          </ul>
-        </div>
-
-        
-
-        <div class="u-nav-container-collapse">
-          <!-- Contenedor que se despliega para mostrar el menú en dispositivos pequeños -->
-
-          <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
-            <!-- Barra lateral (offcanvas) que aparece al colapsar el menú con un fondo semi-transparente -->
-
-            <div class="u-inner-container-layout u-sidenav-overflow">
-              <!-- Contenedor interior con un estilo desbordante para manejar contenido largo -->
-
-              <div class="u-menu-close"></div>
-              <!-- Botón para cerrar el menú lateral -->
-
-              <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
-                <!-- Lista de elementos dentro del menú colapsado -->
-
-                <!-- Menú alternativo en la vista móvil (también comentado) -->
-                <!--
-                <li class="u-nav-item">-->
-                  <!-- Enlace a "Página 1" en el menú desplegable lateral 
-                  <a class="u-button-style u-nav-link" href="Página-1.html">Página 1</a>
-                </li> -->
-
-                <li class="u-nav-item">
-                  <!-- Enlace a "Página 2" en el menú desplegable lateral -->
-                  <a class="u-button-style u-nav-link" href="paginaYuna.html">Página 2</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
-          <!-- Superposición (overlay) oscura para el fondo cuando el menú está abierto -->
-        </div>
-      </nav>
+   <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="img/logoMari.svg" alt="Logo" class="logo-icon"> Back
+    </a>
     </div>
   </header>
   <!-- Cierre del header que contiene el logo y el menú de navegación -->
-</body>
-
 
 
 
@@ -255,11 +163,12 @@
         <p class="u-align-center u-text u-text-1 columnas" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250"><strong>1.Research:</strong> During the first two months, we developed some research so to define the problem, the scope and the kind of product we wanted to come up with.
         <br> <br>
         <strong>2.Conceptualisation phase:</strong> Once the scope was defined, we worked on different brainstorming sessions and creative methods. We defined criteria from the previous reserarch inpunts and choose the most promising idea from which we wanted to iterate from then on.
-        <br>
+        <br><br>
         <strong>3.Embodiment phase:</strong> Once the concept was defined, we worked on its embodiment, by defining its shape, materials, realising a smaller scale model, testing different opening systems, etc.
         <br> <br>
         <strong>4.Commercialization proposal: 
         </strong>Simultaneously with this last phase, we work in spreading the idea by increasing the awareness on microplastics and on its possible comercialization.
+        <br> <br>
 
     </p>
       </div>
@@ -323,18 +232,17 @@
     Para simplificar tu footer y eliminar las clases específicas de la plataforma de creación web (como u-align-center, u-footer, u-grey-80, etc.), que estan en el archivo nicepage.css
 -->
 
-    <footer class="footer">
-    <div class="footer-content">
-        <p>Proyecto YUNA.</p>
-    </div>
-</footer>
-
-<section class="backlink">
-    <p>
-        <span>This site was created with the </span>
-        <a href="https://nicepage.com/" target="_blank" rel="nofollow">Nicepage</a>
-    </p>
-</section>
-
+     <footer class="footer u-align-center u-clearfix u-container-align-center u-footer u-footer" id="sec-31af"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">Hope you liked it! <br>
+        "Back", to see more proyects :)</p>
+      </div></footer>
+    <section class="backlink u-backlink u-clearfix u-grey-80">
+      <p class="u-text">
+         <span>This site was created by Mari</span>
+        <!--<a class="u-link" href="https://nicepage.com/" target="_blank" rel="nofollow">
+          <span>Nicepage</span>
+        </a>-->
+      </p>
+    </section>
   
 </body></html>
