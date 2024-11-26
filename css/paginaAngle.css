@@ -1,15 +1,14 @@
-/** ICONO INFOOOOOOOO -->
-                <div class="testimonial-icon">
-                    <i class="fa fa-quote-left"></i>
-                </div>**/
-
+/*gama colores- para utilizarlos en css: 
+    color: var(--maincolor);  */
 :root {
     --color-rojo: #ED1C24; 
     --color-azul: #0038A8; 
     --color-amarillo: #FFF200;
     --text-color: #0C0C0C; 
     --color-blanco: #FFFFFF; 
+    --maincolor:#FFF200;
 }
+
 
 .columnas {
   column-count: 2; /* Número de columnas */
@@ -60,16 +59,6 @@ p {
   
    
 
-    /*.navbar a.navbar-brand {
-      color: #0c0c0c;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-
-    .navbar a.navbar-brand:hover {
-      color: #0038A8;
-    }*/
-
 /*-------SECCION 1 (FOTO INICIAL Y TEXTOS)------*/
 
 .u-section-1 .u-sheet-1 {
@@ -79,9 +68,11 @@ p {
 .u-section-1 .tituloProyectos{
     font-family: Roboto;
     font-weight: bold; /* o 700 */
-    font-size: 116px;
-    color:  #0038A8; 
-    margin-bottom: -70px; /* Añade espacio debajo del nuevo párrafo */
+    font-style: italic;
+    font-size: 80px;
+    color: var(--maincolor);
+    -webkit-text-stroke: 0.5px black; 
+    margin-bottom: -50px; /* Añade espacio debajo del nuevo párrafo */
 }
 
 .u-section-1 .u-text-1 {
@@ -92,8 +83,8 @@ p {
  
 .u-section-1 .u-text-titulo {
     font-weight: bold;
-    color:  #0038A8; 
-    font-size: 18px; 
+    color:  #000; 
+    font-size: 20px; 
     margin-bottom: 10px; /* Añade espacio debajo del nuevo párrafo */
 }
 
@@ -185,7 +176,7 @@ p {
 }
 
 .u-section-2 .u-image-1 {
-  background-image: url("../img/pr1-yuna-foto1.png");
+  background-image: url("../img/pr4-angle-foto1.jpeg");
   background-position: 75% 50%;
 
   /*background-size: cover;
@@ -203,8 +194,8 @@ p {
 }
 
 .u-section-2 .u-image-2 {
-  background-image: url("../img/pr1-yuna-foto3.png");
-  background-position: 40% 50%;
+  background-image: url("../img/pr4-angle-foto2.jpeg");
+  background-position: 50% 90%;
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
@@ -219,8 +210,8 @@ p {
 
 .u-section-2 .u-image-3 {
   
-  background-image: url("../img/pr1-yuna-foto2.JPG");
-  background-position: 75% 40%; /*75.51% significa que la imagen de fondo comenzará desde el 75.51% del ancho del elemento. Es decir, la imagen se posicionará un poco más allá de tres cuartas partes del ancho del elemento.
+  background-image: url("../img/pr4-angle-foto4.jpeg");
+  background-position: 55% 99%; /*75% significa que la imagen de fondo comenzará desde el 75% del ancho del elemento. Es decir, la imagen se posicionará un poco más allá de tres cuartas partes del ancho del elemento.
                                     50% significa que la imagen de fondo estará centrada verticalmente en el elemento, comenzando desde el medio del alto del mismo.*/
  
   --animation-custom_in-translate_x: 0px;
@@ -235,8 +226,8 @@ p {
 }
 
 .u-section-2 .u-image-4 {
-  background-image: url("../img/pr1-yuna-foto4.png");
-  background-position: 50% 50%;
+  background-image: url("../img/pr4-angle-foto3.jpeg");
+  background-position: 50% 90%;
   /*background-size: contain;*/
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
@@ -288,11 +279,12 @@ p {
     grid-auto-columns: 100%;
   }
 } 
+
 /*-------------  SECTION 3 (texto)  ----------*/
 .u-section-3 {
   background-image: none;
-  background-color: #0038A8;
-  color: white;
+  background-color: var(--maincolor);
+  color: black;
 }
 
 .u-section-3 .u-sheet-1 {
@@ -354,8 +346,8 @@ p {
 }
 
 .u-section-4 .u-image-1 {
-  background-image: url("../img/pr1-yuna-foto5.png");
-  background-position: 50% 50%;
+  background-image: url("../img/pr4-angle-foto5.png");
+  background-position: 50% 1%;
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
@@ -368,8 +360,8 @@ p {
 }
 
 .u-section-4 .u-image-2 {
-  background-image: url("../img/pr1-yuna-foto6.JPG");
-  background-position: 13% 50%;
+  background-image: url("../img/pr4-angle-foto6.jpeg");
+  background-position: 50% 50%;
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
@@ -382,7 +374,7 @@ p {
 }
 
 .u-section-4 .u-image-3 {
-  background-image: url("../img/pr1-yuna-foto7.png");
+  background-image: url("../img/pr4-angle-foto7.jpeg");
   background-position: 50% 70%;
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
@@ -396,8 +388,8 @@ p {
 }
 
 .u-section-4 .u-image-4 {
-  background-image: url("../img/pr1-yuna-foto8.jpg");
-  background-position: 50% 6.58%;
+  background-image: url("../img/pr4-angle-foto8.jpeg");
+  background-position: 50% 50%;
   --animation-custom_in-translate_x: 0px;
   --animation-custom_in-translate_y: 0px;
   --animation-custom_in-opacity: 0;
@@ -409,6 +401,32 @@ p {
   padding: 10px;
 }
 
+.u-section-4 .u-image-5 {
+  background-image: url("../img/pr4-angle-foto9.jpeg");
+  background-position: 70% 90%;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+}
+
+.u-section-4 .u-container-layout-5 {
+  padding: 10px;
+}
+.u-section-4 .u-image-6 {
+  background-image: url("../img/pr4-angle-foto10.jpeg");
+  background-position: 80% 85%;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+}
+
+.u-section-4 .u-container-layout-6 {
+  padding: 10px;
+}
 @media (max-width: 1199px) {
   .u-section-4 .u-sheet-1 {
     min-height: 1239px;
@@ -460,89 +478,12 @@ p {
 }
 
 
-/*-------------  SECTION 5 (textocontacto)
-.u-section-5 .u-sheet-1 {
-  min-height: 367px;
-}
 
-.u-section-5 .u-text-1 {
-  line-height: 1.4;
-  margin: 70px 751px 0 0;
-}
-
-
-  
-.u-section-5 .u-btn-1 {
-  border-style: none;
-  font-size: 3.75rem;
-  letter-spacing: 1px;
-  align-self: center;
-  font-weight: 700;
-  margin: 12px auto 0 0;
-  padding: 0;
-}
-
-.u-section-5 .u-text-2 {
-  margin: 12px 797px -130px 0;
-}
-
-@media (max-width: 1199px) {
-  .u-section-5 .u-text-1 {
-    margin-right: 551px;
-  }
-
-  .u-section-5 .u-text-2 {
-    margin-right: 597px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-5 .u-text-1 {
-    margin-right: 331px;
-  }
-
-  .u-section-5 .u-text-2 {
-    margin-right: 377px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-5 .u-text-1 {
-    margin-right: 151px;
-  }
-
-  .u-section-5 .u-btn-1 {
-    font-size: 3rem;
-  }
-
-  .u-section-5 .u-text-2 {
-    margin-right: 197px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-5 .u-sheet-1 {
-    min-height: 341px;
-  }
-
-  .u-section-5 .u-text-1 {
-    margin-right: 0;
-  }
-
-  .u-section-5 .u-btn-1 {
-    font-size: 1.875rem;
-  }
-
-  .u-section-5 .u-text-2 {
-    margin-right: 0;
-    margin-bottom: -156px;
-  }
-}----------*/
 
 /* Estilos para el footer */
 .footer {
-    background-color: var(--color-azul); /* Color de fondo gris oscuro */
-    color: var(--color-amarillo); /* Color de texto blanco */
+    background-color: var(--maincolor); /* Color de fondo gris oscuro */
+    color: var(--color-azul); /* Color de texto blanco */
     text-align: center; /* Centrar el texto */
     padding: 20px 0; /* Espaciado superior e inferior */
 }
@@ -554,15 +495,21 @@ p {
 
 /* Estilos para la sección de backlink */
 .backlink {
-    background-color: var(--color-azul); /* Mismo color de fondo que el footer */
+    background-color: var(--maincolor); /* Mismo color de fondo que el footer */
     text-align: center; /* Centrar el contenido */
     padding: 10px 0; /* Espaciado */
     font-size: 12px; /* Tamaño de fuente pequeño */
 }
 
+.backlink span {
+    
+    color: black; /* Color dorado para el enlace */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+}
+
 .backlink a {
     
-    color: var(--color-amarillo); /* Color dorado para el enlace */
+    color: black; /* Color dorado para el enlace */
     text-decoration: none; /* Eliminar subrayado del enlace */
 }
 
