@@ -1,0 +1,406 @@
+/*gama colores- para utilizarlos en css: 
+    color: var(--maincolor);  */
+:root {
+    --color-rojo: #ED1C24; 
+    --color-azul: #0038A8; 
+    --color-amarillo: #FFF200;
+    --text-color: #0C0C0C; 
+    --color-blanco: #FFFFFF; 
+    --maincolor:#0038A8;
+    --seccolor:#FFFFFF;
+}
+
+
+.columnas {
+  column-count: 2; /* Número de columnas */
+  column-gap: 20px; /* Espacio entre columnas */
+}
+
+p {
+   margin-bottom: 10px; /* Espacio más pequeño entre párrafos */
+   line-height: 1.5; /* Espacio entre líneas dentro del párrafo */
+}
+
+
+
+/* Estilos para la barra de navegación */
+    .navbar {
+      position: sticky; 
+      top: 0;
+      background-color: #FFF;
+      padding: 0.5rem 0.5rem 0.5rem 2rem; /* top, right, bottom, left */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    }
+
+    .navbar a{
+      color: #0038A8;
+  }
+    .navbar a:hover{
+    color: #ED1C24;
+  }
+    .navbar-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: inherit;
+  }
+
+  .logo-icon {
+    width: 50px;  /* Ajusta el tamaño del ícono */
+    height: auto;
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    
+  }
+
+  
+   
+
+/*-------SECCION 1 (FOTO INICIAL Y TEXTOS)------*/
+
+.u-section-1 .u-sheet-1 {
+  min-height: 676px;
+}
+
+.u-section-1 .tituloProyectos{
+ font-family: Roboto;
+    font-size: 80px;
+    font-weight: bold;
+    color: #0038A8; /* Color del texto */
+    margin-bottom: -50px; /* Añade espacio debajo del nuevo párrafo */
+  }
+
+.u-section-1 .u-text-1 {
+  font-size: 16px;
+  width: 845px;
+  margin: 30px auto 0; /*margen entre párrafos*/
+}
+ 
+.u-section-1 .u-text-titulo {
+    font-weight: bold;
+    color:  #0038A8; 
+    font-size: 20px; 
+    margin-bottom: 10px; /* Añade espacio debajo del nuevo párrafo */
+}
+
+.u-section-1 .u-image-1 {
+  width: 654px;
+  height: 430px;   /*cambia el tamaño de la foto si quieres*/
+  object-fit: cover;
+  --animation-custom_in-translate_x: -150px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  margin: 30px auto 0;
+}
+
+/*Botón de manual IC*/
+.btn { 
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 0;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+    border: 2px solid transparent;
+    border-color: var(--maincolor);
+    color: var(--maincolor);
+    background: transparent;
+    box-shadow: inset 0 0 0 0 var(--maincolor);
+
+}
+
+.btn:hover {
+    color: #ffffff;
+    background: var(--maincolor);
+    box-shadow: inset 0 0 0 50px var(--maincolor); 
+}
+
+.imgD{
+    display: block;
+    max-width: 80%; /* La imagen nunca será más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción original */
+    margin: 0 auto; /* Centra la imagen si el contenedor es más ancho */
+}
+
+
+@media (max-width: 991px) {
+  .u-section-1 .u-text-1 {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 673px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 540px;
+    height: 355px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 542px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 340px;
+    height: 224px;
+  }
+
+}
+
+
+/*-------------  SECTION 2 (FOTOS)  ----------*/
+
+/*-------------  SECTION 3 (texto)  ----------*/
+.u-section-3 {
+  background-image: none;
+  background-color: var(--maincolor);
+  color: var(--seccolor);
+}
+
+.u-section-3 .u-sheet-1 {
+  min-height: 268px; /*tamaño de la banda de color*/
+  padding: auto auto 30px auto;
+}
+
+.u-section-3 .u-text-1 {
+  --animation-custom_in-translate_x: -200px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 45px 0 0; /* eliminamos el margen negativo */
+  padding: 0 15px; /* agregamos padding para que el texto no toque los bordes */
+  max-width: 100%; /* aseguramos que el texto no se desborde */
+  word-wrap: break-word; /* forzamos el ajuste de palabras largas */
+}
+
+@media (max-width: 767px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 396px;
+  }
+
+  .u-section-3 .u-text-1 {
+   font-size: 14px; /* reducimos un poco el tamaño de fuente */
+    margin-bottom: 88px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 554px;
+  }
+
+  .u-section-3 .u-text-1 {
+    font-size: 12px; /* tamaño de fuente aún menor en pantallas pequeñas */
+    margin-bottom: 50px;
+  
+  }
+}
+/*-------------  SECTION 4 (fotos)  ----------*/
+.u-section-4 .u-sheet-1 {
+  min-height: 1474px;
+}
+
+.u-section-4 .u-list-1 {
+  margin-bottom: 62px;
+  margin-top: 70px;
+}
+
+.u-section-4 .u-repeater-1 {
+  grid-auto-columns: calc(50% - 5px);
+  grid-template-columns: repeat(2, calc(50% - 5px));
+  min-height: 1333px;
+  grid-gap: 10px;
+}
+
+.u-section-4 .u-image-1 {
+  background-image: url("../img/pr2-ICyuna-foto2.png");
+  background-position: 50% 1%;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+}
+
+.u-section-4 .u-container-layout-1 {
+  padding: 10px;
+}
+
+.u-section-4 .u-image-2 {
+  background-image: url("../img/pr2-ICyuna-foto3.png");
+  background-position: 50% 50%;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+}
+
+.u-section-4 .u-container-layout-2 {
+  padding: 10px;
+}
+
+.u-section-4 .u-image-3 {
+  background-image: url("../img/pr2-ICyuna-foto4.png");
+  background-position: 50% 70%;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+}
+
+.u-section-4 .u-container-layout-3 {
+  padding: 10px;
+}
+
+.u-section-4 .u-image-4 {
+  background-image: url("../img/pr2-ICyuna-foto5.png");
+  background-position: 50% 50%;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+}
+
+.u-section-4 .u-container-layout-4 {
+  padding: 10px;
+}
+
+.u-section-4 .u-image-5 {
+  background-image: url("../img/pr2-ICyuna-foto6.png");
+  background-position: 70% 90%;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+}
+
+.u-section-4 .u-container-layout-5 {
+  padding: 10px;
+}
+.u-section-4 .u-image-6 {
+  background-image: url("../img/pr2-ICyuna-foto7.png");
+  background-position: 80% 60%;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
+}
+
+.u-section-4 .u-container-layout-6 {
+  padding: 10px;
+}
+@media (max-width: 1199px) {
+  .u-section-4 .u-sheet-1 {
+    min-height: 1239px;
+  }
+
+  .u-section-4 .u-list-1 {
+    margin-bottom: -173px;
+  }
+
+  .u-section-4 .u-repeater-1 {
+    min-height: 1099px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-4 .u-sheet-1 {
+    min-height: 2308px;
+  }
+
+  .u-section-4 .u-list-1 {
+    margin-bottom: 68px;
+  }
+
+  .u-section-4 .u-repeater-1 {
+    grid-auto-columns: calc(100% + 0px);
+    grid-template-columns: 100%;
+    min-height: 2168px;
+  }
+
+  .u-section-4 .u-image-1 {
+    background-position: 50% 23.11%;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-4 .u-repeater-1 {
+    grid-auto-columns: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-4 .u-sheet-1 {
+    min-height: 2238px;
+  }
+
+  .u-section-4 .u-list-1 {
+    margin-bottom: -2px;
+  }
+}
+
+
+
+
+/* Estilos para el footer */
+.footer {
+    background-color: var(--color-azul); /* Color de fondo gris oscuro */
+    color: var(--color-amarillo); /* Color de texto blanco */
+    text-align: center; /* Centrar el texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+}
+
+.footer p {
+    margin: 0; /* Eliminar el margen por defecto */
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+/* Estilos para la sección de backlink */
+.backlink {
+    background-color: var(--color-azul); /* Mismo color de fondo que el footer */
+    text-align: center; /* Centrar el contenido */
+    padding: 10px 0; /* Espaciado */
+    font-size: 12px; /* Tamaño de fuente pequeño */
+}
+
+.backlink a {
+    
+    color: var(--color-amarillo); /* Color dorado para el enlace */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+}
+
+.backlink a:hover {
+    color: var(--color-rojo);
+    text-decoration: underline; /* Subrayar el enlace al pasar el mouse */
+}
+
+

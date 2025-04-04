@@ -66,13 +66,16 @@ p {
 }
 
 .u-section-1 .tituloProyectos{
-    font-family: Roboto;
-    font-weight: bold; /* o 700 */
-    font-style: italic;
+ font-family: Roboto;
     font-size: 80px;
-    color: var(--maincolor);
-    -webkit-text-stroke: 0.5px black; 
+    font-weight: bold;
+    color: #FFF200; /* Color del texto */
     margin-bottom: -50px; /* Añade espacio debajo del nuevo párrafo */
+    text-shadow: 
+        1px 1px 0 black,  
+        -1px -1px 0 black,  
+        1px -1px 0 black,
+        -1px 1px 0 black; /* Contorno simulado */
 }
 
 .u-section-1 .u-text-1 {
